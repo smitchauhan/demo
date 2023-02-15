@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        
+	<link href="../BOOTSTRAP/css/bootstrap/bootstrap.css" type="text/css" rel="stylesheet" />
+		
+		<!--CDN LINK OF JQUERY PARENT PLUG IN - COMPULSORY TO BE HERE. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <style>
+            i.fa,b {
+                color:sienna;
+            }
+    </style>
+		
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-lg-offset-4 col-lg-4" id="form">    
+            <h2 class="text-center"><i class="fa fa-user-plus"></i>Create New Account</h2><hr>
+            <div class="form-group">
+                <b>FirstName:</b>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" maxlength="15" id="Fnametext" placeholder="Enter First Name here.." class="form-control">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <b>LastName:</b>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" maxlength="15" id="Lnametext" placeholder="Enter Last Name here.." class="form-control">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <b>Email Id:</b>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input type="text" maxlength="25" id="Fnametext" placeholder="Enter Email here.." class="form-control">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <i class="fa fa-user"></i><b>Contact:</b>
+                <div class="input-group">
+                    <span class="input-group-addon">+91</span>
+                    <input type="tel" maxlength="10" id="Fnametext" placeholder="Enter Contact No here.." class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <b>Gender:</b>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-male"></i> | <i class="fa fa-female"></i></span>
+                    <select name="Male" id="Maleselect" class="form-control">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group text-center" style="margin-top: 10px;">
+                    <a class="btn btn-primary" ><i class="fa fa-user-plus" style="color: brown;">Submit</i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

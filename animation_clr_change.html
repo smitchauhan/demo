@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color change using animation</title>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            position: relative;
+            animation-name: abc;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .Nb{
+            width: 35px;
+            height: 35px;
+            background-color: black;
+            position: relative;
+            animation-name: newball;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes abc{
+            0%{background-color:violet;top: 0px; left: 0px; transform: rotate(0deg);}
+            50%{background-color: blue;top: 0px;left:100px; transform: rotate(90deg); border-radius: 50%;}
+            75%{background-color:bisque;top: 500px;left:100px; transform: rotate(180deg); border-radius: 50%;}
+            100%{background-color:red;top:0px;left:500px; transform: rotate(270deg); border-radius: 50%;}
+        }
+        @keyframes newball{
+            0%{background-color:turquoise;top: 0px; left:0px; transform: rotate(0deg);}
+            50%{background-color: rgb(26, 139, 60);top: 0px;left:500px; transform: rotate(65deg); border-radius: 50%;}
+            75%{background-color:rgb(214, 82, 211);top: 500px;left:500px; transform: rotate(180deg); border-radius: 50%;}
+            100%{background-color:rgb(42, 153, 221);top: 500px;left:40px; transform: rotate(270deg); border-radius: 50%;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="Nb"></div>
+</body>
+</html>
